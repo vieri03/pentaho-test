@@ -1,0 +1,3836 @@
+<transformation>
+  <info>
+    <name>teller</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/demos/ContinousIntegration/pentaho-test</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>100000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2023/11/07 10:22:14.410</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2024/01/24 20:16:00.118</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>10.11.88.218 stg_host</name>
+    <server>10.11.88.218</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>stg_host</database>
+    <port>1433</port>
+    <username>dwhadm</username>
+    <password>Encrypted 2be98afc86aa7f2d48f2a8d20fcd6eefa</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>all</from>
+      <to>output TB_AGE_MARITAL_DD 2 2 2 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>master</from>
+      <to>output TB_AGE_MARITAL_DD 2 2 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>all 2</from>
+      <to>output TB_AGE_MARITAL_DD 2 2 2 2 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Table input 2 2 2 2 2 2 2</from>
+      <to>Text file output 2 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Table input 2 2 2 2 2 2 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>10.11.88.218 stg_host</connection>
+    <sql>SELECT * FROM stg_host_restore.dbo.temp_eri_callcenter_3</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>KodeCabang</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>KodeCabang</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>NamaCabang</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>NamaCabang</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Area</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Area</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Regional</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Regional</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TanggalKunjunganNasabah</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>TanggalKunjunganNasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>JamTransaksi</name>
+        <length>8</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>JamTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cif</name>
+        <length>7</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>cif</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>nama_nasabah</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>nama_nasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>nomor_rekening</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>nomor_rekening</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>User ID / NIP</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>User ID / NIP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Nama User</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Nama User</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Transaksi Area (CS / Teller)</name>
+        <length>6</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Transaksi Area (CS / Teller)</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>JenisTransaksi</name>
+        <length>29</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>JenisTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>Nominal (IDR)</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Nominal (IDR)</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>Nominal Ori</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Nominal Ori</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>currency</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>currency</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Channel Transaksi</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>Channel Transaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>KriteriaNasabah</name>
+        <length>71</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>KriteriaNasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLBFIL</name>
+        <length>133</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>TLBFIL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLTX</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>TLTX</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLTX_DESC</name>
+        <length>50</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>TLTX_DESC</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TipeTransaksi</name>
+        <length>8</length>
+        <precision>-1</precision>
+        <origin>Table input 2 2 2 2 2 2 2</origin>
+        <comments>TipeTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Text file output 2 2 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\23020238\Downloads\tanda_callcenter_des</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>KodeCabang</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>NamaCabang</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Area</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Regional</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TanggalKunjunganNasabah</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>JamTransaksi</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cif</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nama_nasabah</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nomor_rekening</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>User ID / NIP</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Nama User</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Transaksi Area (CS / Teller)</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>JenisTransaksi</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Nominal (IDR)</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Nominal Ori</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>currency</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Channel Transaksi</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>KriteriaNasabah</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TLBFIL</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TLTX</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TLTX_DESC</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TipeTransaksi</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>all</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>10.11.88.218 stg_host</connection>
+    <sql>WITH master AS
+(
+	select * from stg_host_restore.dbo.temp_eri_callcenter
+), cabang as(
+	select a.JDBR as BranchCode, a.JDNAME as NamaCabang, d.Area,c.JDNAME as Regional 
+	from CURRENT_JHDATA a
+	left join CURRENT_JHLOCA b on a.JDBR = b.JDBR
+	left join CURRENT_JHDATA c on b.JHREG = c.JDBR
+	left join PARAM_AREA d on a.JDBR = d.Kode_Cabang
+)
+	, temp as(
+	select	 *
+	from stg_host_restore.dbo.temp_eri_callcenter_2
+)
+	, tlhist as(
+	select 
+			A.*,
+			case 
+					when (nojurnal = 2 and TLBTCD in (4,5,6,20,21,702,703,1701,1733,1751,1755,2701,2721,2751,2761,3701,5807,7165,7182,7190,7191,7193,7415,7420,7911,7912,7916,7918,7925,7926,7930)) then 1
+					when (nojurnal = 3 and TLBTCD in (5408,5409,5806,5808,5809,7846)) then 1
+					when (nojurnal = 1 and TLBTCD not in (4,5,6,20,21,702,703,1701,1733,1751,1755,2701,2721,2751,2761,3701,5807,7165,7182,7190,7191,7193,7415,7420,7911,7912,7916,7918,7925,7926,7930,5408,5409,5806,5808,5809,7846)) then 1
+			else null end 'Flag_Count',
+			case 
+					when (nojurnal = 2 and TLBTCD in (4,5,6,20,21,702,703,1701,1733,1751,1755,2701,2721,2751,2761,3701,5807,7165,7182,7190,7191,7193,7415,7420,7911,7912,7916,7918,7925,7926,7930)) then (coalesce(amount_d,0) + coalesce(amount_c,0))
+					when (nojurnal = 3 and TLBTCD in (5408,5409,5806,5808,5809,7846)) then (coalesce(amount_d,0) + coalesce(amount_c,0))
+					when (nojurnal = 1 and TLBTCD not in (4,5,6,20,21,702,703,1701,1733,1751,1755,2701,2721,2751,2761,3701,5807,7165,7182,7190,7191,7193,7415,7420,7911,7912,7916,7918,7925,7926,7930,5408,5409,5806,5808,5809,7846)) then (coalesce(amount_d,0) + coalesce(amount_c,0))
+			else 0 end 'Ori_NOMINAL' 
+	from temp A
+	)
+	, TLTEL AS 	(
+	select JULIAN_MIS_DATE,TLNUM,TLNAME
+	from HISTORY_TLTEL
+	where JULIAN_MIS_DATE between 2023335 and 2023364
+	)
+	, JHFXRT AS	(
+	select JULIAN_MIS_DATE, jfxcod, JFXRT8
+	from HISTORY_JHFXRT
+	where JULIAN_MIS_DATE between 2023335 and 2023364
+	)
+	,final as(
+			select  
+			TLBRN# as [KodeCabang],
+			f.NamaCabang as [NamaCabang], 
+			isnull(AREA,'') as Area,
+			f.Regional as Regional,
+			cast(cast([dbo].[fn_julian_to_date](a.JULIAN_MIS_DATE) as date) as varchar) as TanggalKunjunganNasabah,
+			left(right('0'+cast(TLBTMI as varchar),6),2)+':'+substring(right('0'+cast(TLBTMI as varchar),6),3,2)+':'+right(right('0'+cast(TLBTMI as varchar),6),2) as JamTransaksi,
+			cast(a.TLBID as varchar) as [User ID / NIP],
+			TLNAME as [Nama User],
+			'Teller' as [Transaksi Area (CS / Teller)],
+			case when TLBTCD = 14																																														then 'Vault In BI'
+				when TLBTCD = 15																																														then 'Vault Out BI'
+				when TLBTCD in (16,7044)																																												then 'Vault In Cabang'
+				when TLBTCD in (17,7045)																																												then 'Vault Out Cabang'
+				when TLBTCD in (7911,7912,702,703)																																										then 'Jual Beli Bank Notes' 
+				when TLBTCD in (1733,1734,1760,2742,2743,2767,2768)																																						then 'Pembayaran Virtual Account'
+				when TLBTCD in (7051,7054,7053,7052,7050)																																								then 'Modul Penerimaan Negara'
+				when TLBTCD in (219,221,1217,1218,2217,2218,2219,2224)																																					then 'Pembayaran Kartu Kredit'
+				when TLBTCD in (5201,5271)																																												then 'Pembayaran Kredit'
+				when TLBTCD in (4801,4802,4803,4804,729,1509,2509,730)																																					then 'Remittance Outgoing'
+				when TLBTCD in (20,21,1730,1731,1732,2790,2791,2792,2793,2794,3790,3791)																																		then 'RTGS Outgoing'
+				when TLBTCD in (727,1507,2507,2508,728)																																									then 'BDS-TRANSFER VIA RTGS'
+				when TLBTCD in  (1758,2757,2758,7192,7196,7416,7420,7438,7442,7520,7521,7522,1757,1220,1221,1707,1708,1757,1758,1770,1771,1772,1773,1774,1775,1776,1777,1780,1781,1782,1783,2220,2221,2222,2223,2707,
+								2708,2713,2714,2717,2730,2731,2732,2733,2734,2735,2736,2737,2757,2758,2759,2770,2771,2772,2773,2774,2775,2776,2777,2780,2781,2782,2783,2784,2785,2786,2787,3704,3707,
+								3708,3709,3717,3718,3719,3737,3739,3745,3747,3749,3757,3759,3767,3769,4104,4302,7190,7191,7192,7193,7194,7195,7196,7197,7414,7415,7416,7417,7418,7419,7420,7421,7436,
+								7437,7438,7439,7440,7441,7442,7443,7516,7517,7518,7520,7521,7522,9406,9407,9408,9409,9412,9418,9419,9427,9438,9439,9440,9441,9442,9443,9444,9445,9446,9447,9448,9449,9450,9451)			then 'Overbooking'
+				when TLBTCD in (4795,4796,4797,4798,4799)																																								then 'Transfer BI Fast'
+				when TLBTCD in (5206,5207,5208,5209,5278,5279)																																							then 'Overbooking Pembayaran Kredit' 
+				when TLBTCD in (3701,7182,7424,7432,7513,1701,1751,2701,2721,2751,2761,4101,4102,7165,7393,7408,7036)																									then 'Setor Tunai'
+				when TLBTCD in (7183,7425,7433,220 ,1409,1702,1709,1752,2409,2702,2709,2722,2729,2752,2762,3731,3734,3751,3754,4301,7166,7394,7409,9401,9402,9403,9405,7037)											then 'Tarik Tunai'
+				when TLBTCD in (725,1505,2505,2506,726)																																									then 'BDS-TRANSFER VIA SKN'
+				when TLBTCD in (8,19,1106,1116,1305,1315,1821,1822,1823,1824,1827,2106,2116,2305,2315,2710,2821,2822,2823,2824)																							then 'SKN Debit Outgoing'
+				when TLBTCD in (4,5,701,714,720,722,1403,1407,1504,1514,1706,1710,1712,1713,1721,1756,1759,2403,2423,2504,2514,2524,2534,2706,2711,2712,2723,2725,2740,
+				2741,2753,2756,2765,2766,3203,3303,3735,3755,3785,4303,4304,7434,7913,7914,7915,7916,7917,7918,7919,7920,7921,7922,7923,7924,7925,7926,7927,
+				7928,7929,7930,9453,9454,7033,7041)																																										then 'SKN Kredit Outgoing'
+				when TLBTCD in (2903)																																													then 'SA Print Passbook' 
+				when TLBTCD in (2904)																																													then 'SA Print Cover'      
+				else null
+				end as JenisTransaksi,
+				'Nominal (IDR)' = cast(cast(Ori_NOMINAL * B.JFXRT8 as Decimal(18,5))as float),
+				'Nominal Ori'	= cast(cast(Ori_NOMINAL as Decimal(18,5))as float),
+				currency,	
+				TLBFIL,
+				case when cast(left(TLBFIL,4) as varchar) = '1453' then 'BDS Teller'
+				when cast(left(TLBFIL,4) as varchar) = '9999' then 'Fast' 
+				when cast(left(TLBFIL,4) as varchar) = '8186' then 'MFLIS'
+				else 'Fast'
+				end as [Channel Transaksi],
+				TLBTCD as TLTX,
+				TLTX_DESC,
+ 				case when TLBTCD in (14,15,16,17,726,728,1409,2409,3734,3754,4798,7912,7044,7045,2709,1709,2729,7050,5,7045,7044,20,701,722,1702,1752,2702,2722,2752,2762,3751,7041,7166,7183,7394,7409,7425,7433,9401,9402,9403,9405,5,20,219,701,702,722,1701,1733,1751,2701,2721,2751,2761,3701,4101,4102,4801,5201,5271,7033,7041,7050,7165,7182,7393,7408,7424,7432,7513,7911) then 'Cash' else 'Cashless' end as TipeTransaksi,
+				account
+			from tlhist a --62599527
+			left join CABANG f on a.TLBRN# = f.BranchCode
+			left join TLTEL i on a.TLBID = i.TLNUM and a.JULIAN_MIS_DATE = i.JULIAN_MIS_DATE
+			left join JHFXRT B	
+						on a.JULIAN_MIS_DATE = b.JULIAN_MIS_DATE and A.Currency = B.jfxcod
+			where i.TLNAME not in ('RESERVED FOR PC/E','SMS BANKING','M-SMILE','INTERNET BANKING','AUTOPAY','M SMILE') and Flag_Count = 1
+	), finalee3 as (
+	select* from final
+	where JenisTransaksi is not null
+	), rowing as
+	(
+	select distinct
+		a.*,
+		case when account = b.ACCTNO then (case when CFCLAS = 'I' then 'Individu' else 'Non-Individu' end)
+			  when account = c.GLGRF# then cast(GLGRF# as varchar)+' '+GLGDES 
+			  else null end as KriteriaNasabah,
+		CIFNO,
+		SNAME,
+		ACCTNO
+	from finalee3 a
+	left join (select ACCTNO,CLASS,CIFNO,SNAME,ACTYPE from CURRENT_DDMast
+			   union all
+			   select ACCTNO,CLASS,CIFNO,SNAME,ACTYPE from CURRENT_CDMAST
+			   union all
+			   select ACCTNO,CLASS,CIFNO,SNAME,ACTYPE from CURRENT_LNMAST )b on a.account = b.ACCTNO
+	left join CURRENT_GLGREF c on a.account = c.GLGRF# and a.currency = c.GLGCUR
+	left join CURRENT_CFMAST d on b.CIFNO = d.CFCIF#
+	where TanggalKunjunganNasabah between '2023-12-01' and '2023-12-31'
+--	order by TanggalKunjunganNasabah,JamTransaksi
+	) 
+	SELECT DISTINCT
+		KodeCabang,
+		NamaCabang,
+		Area,
+		Regional,
+		TanggalKunjunganNasabah,
+		JamTransaksi,
+--		dbo.hash_data(CIFNO) cif_hash,
+		CIFNO cif,
+		dbo.hash_nama(SNAME) nama_nasabah,
+		dbo.hash_norek(ACCTNO) nomor_rekening,
+		--ACCTNO norek,
+		[User ID / NIP],
+		[Nama User],
+		[Transaksi Area (CS / Teller)],
+		JenisTransaksi,
+		[Nominal (IDR)],
+		[Nominal Ori],
+--		([Nominal Ori]/[Nominal (IDR)]) as rate,
+		currency,
+		[Channel Transaksi],
+		KriteriaNasabah,
+		TLBFIL,
+		TLTX,
+		TLTX_DESC,
+		TipeTransaksi
+	FROM rowing where KriteriaNasabah IN ('Non-Individu','Individu');</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>KodeCabang</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all</origin>
+        <comments>KodeCabang</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>NamaCabang</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>NamaCabang</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Area</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Area</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Regional</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Regional</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TanggalKunjunganNasabah</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>TanggalKunjunganNasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>JamTransaksi</name>
+        <length>8</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>JamTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>cif</name>
+        <length>7</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>cif</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>nama_nasabah</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>nama_nasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>nomor_rekening</name>
+        <length>9999999</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>nomor_rekening</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>User ID / NIP</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>User ID / NIP</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Nama User</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Nama User</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Transaksi Area (CS / Teller)</name>
+        <length>6</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Transaksi Area (CS / Teller)</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>JenisTransaksi</name>
+        <length>29</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>JenisTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>Nominal (IDR)</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Nominal (IDR)</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>Nominal Ori</name>
+        <length>15</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Nominal Ori</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>currency</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>currency</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Channel Transaksi</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>Channel Transaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>KriteriaNasabah</name>
+        <length>71</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>KriteriaNasabah</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLBFIL</name>
+        <length>133</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>TLBFIL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLTX</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all</origin>
+        <comments>TLTX</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLTX_DESC</name>
+        <length>50</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>TLTX_DESC</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TipeTransaksi</name>
+        <length>8</length>
+        <precision>-1</precision>
+        <origin>all</origin>
+        <comments>TipeTransaksi</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>all 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>10.11.88.218 stg_host</connection>
+    <sql>WITH master AS
+(
+	select * from stg_host_restore.dbo.temp_eri_callcenter
+), cabang as(
+	select a.JDBR as BranchCode, a.JDNAME as NamaCabang, d.Area,c.JDNAME as Regional 
+	from CURRENT_JHDATA a
+	left join CURRENT_JHLOCA b on a.JDBR = b.JDBR
+	left join CURRENT_JHDATA c on b.JHREG = c.JDBR
+	left join PARAM_AREA d on a.JDBR = d.Kode_Cabang
+),Raw_other as(
+select    	 a.tlbtcd,
+			 a.TLBID,
+			 a.JULIAN_MIS_DATE,
+			 a.tlbtdt,
+			 a.tlbcur,
+			 a.tlcur1,
+			 a.tlcur2,
+			 a.tlbf01 as bucket_1,
+			 a.tlbf02 as bucket_2,
+			 a.tlbf03 as bucket_3,
+			 a.tlbf04 as bucket_4,
+			 a.tlbf05 as bucket_5,
+			 a.tlbf06 as bucket_6,
+			 a.tlbf07 as bucket_7,
+			 a.tlbf08 as bucket_8,
+			 a.tlbf09 as bucket_9,
+			 a.tlbf10 as bucket_10,
+			 a.tlbf11 as bucket_11,
+			 a.tlbf12 as bucket_12,
+			 a.tlbf13 as bucket_13,
+			 a.tlbf14 as bucket_14,
+			 a.tlbf15 as bucket_15,
+			 a.tlbf16 as bucket_16,
+			 a.tlbf17 as bucket_17,
+			 a.tlbf18 as bucket_18,
+			 a.tlbf19 as bucket_19,
+			 a.tlbf20 as bucket_20,
+			 b.tltx_desc,
+			 b.nojurnal,
+			 b.curr,										
+			 b.d_c,
+			 b.bucket as bucket_acc,
+			 	 b.bucket_1 as bucket_1_amu,
+			 b.sign_2 as sign_2_amu,
+			 isnull(b.bucket_2,0) as bucket_2_amu,
+			 b.sign_3 as sign_3_amu,
+			 isnull(b.bucket_3,0) as bucket_3_amu,
+			 b.sign_4 as sign_4_amu,
+			 isnull(b.bucket_4,0) as bucket_4_amu,
+			 TLBTMI,TLBFIL,tl.TLBRN#
+			from master a
+			 inner join stg_today.[dbo].[TODAY_TLTX_MAP] b on a.tlbtcd=b.tltx_code
+			 left join CURRENT_TLCTLU tl on a.TLBCUD = tl.TLCTL 
+), raw_Data as (
+	select	*,
+			account = case bucket_acc	when 1	then bucket_1
+									when 2	then bucket_2
+									when 3	then bucket_3
+									when 4	then bucket_4
+									when 5	then bucket_5
+									when 6	then bucket_6
+									when 7	then bucket_7
+									when 8	then bucket_8
+									when 9	then bucket_9
+									when 10 then bucket_10
+									when 11	then bucket_11
+									when 12 then bucket_12
+									when 13 then bucket_13
+									when 14 then bucket_14
+									when 15 then bucket_15
+									when 16 then bucket_16
+									when 17 then bucket_17
+									when 18 then bucket_18
+									when 19 then bucket_19
+									when 20 then bucket_20
+									else bucket_acc			end,
+			amount_1 = case bucket_1_amu	when 1	then bucket_1
+											when 2	then bucket_2
+											when 3	then bucket_3
+											when 4	then bucket_4
+											when 5	then bucket_5
+											when 6	then bucket_6
+											when 7	then bucket_7
+											when 8	then bucket_8
+											when 9	then bucket_9
+											when 10 then bucket_10
+											when 11	then bucket_11
+											when 12 then bucket_12
+											when 13 then bucket_13
+											when 14 then bucket_14
+											when 15 then bucket_15
+											when 16 then bucket_16
+											when 17 then bucket_17
+											when 18 then bucket_18
+											when 19 then bucket_19
+											when 20 then bucket_20 end,
+			amount_2 = case bucket_2_amu	when 1	then bucket_1
+											when 2	then bucket_2
+											when 3	then bucket_3
+											when 4	then bucket_4
+											when 5	then bucket_5
+											when 6	then bucket_6
+											when 7	then bucket_7
+											when 8	then bucket_8
+											when 9	then bucket_9
+											when 10 then bucket_10
+											when 11	then bucket_11
+											when 12 then bucket_12
+											when 13 then bucket_13
+											when 14 then bucket_14
+											when 15 then bucket_15
+											when 16 then bucket_16
+											when 17 then bucket_17
+											when 18 then bucket_18
+											when 19 then bucket_19
+											when 20 then bucket_20 end,
+			amount_3 = case bucket_3_amu	when 1	then bucket_1
+											when 2	then bucket_2
+											when 3	then bucket_3
+											when 4	then bucket_4
+											when 5	then bucket_5
+											when 6	then bucket_6
+											when 7	then bucket_7
+											when 8	then bucket_8
+											when 9	then bucket_9
+											when 10 then bucket_10
+											when 11	then bucket_11
+											when 12 then bucket_12
+											when 13 then bucket_13
+											when 14 then bucket_14
+											when 15 then bucket_15
+											when 16 then bucket_16
+											when 17 then bucket_17
+											when 18 then bucket_18
+											when 19 then bucket_19
+											when 20 then bucket_20 end,
+			amount_4 = case bucket_4_amu	when 1	then bucket_1
+											when 2	then bucket_2
+											when 3	then bucket_3
+											when 4	then bucket_4
+											when 5	then bucket_5
+											when 6	then bucket_6
+											when 7	then bucket_7
+											when 8	then bucket_8
+											when 9	then bucket_9
+											when 10 then bucket_10
+											when 11	then bucket_11
+											when 12 then bucket_12
+											when 13 then bucket_13
+											when 14 then bucket_14
+											when 15 then bucket_15
+											when 16 then bucket_16
+											when 17 then bucket_17
+											when 18 then bucket_18
+											when 19 then bucket_19
+											when 20 then bucket_20 end,
+			currency = case curr			when 0  then tlbcur
+											when 1  then tlcur1
+											when 2  then tlcur2 end
+	from Raw_other
+	),raw_data_1_2 as (
+	select	*,
+			amount_1_2 = case sign_2_amu	when '+'	then amount_1 + amount_2
+											when '-'	then amount_1 - amount_2
+											when '/'	then amount_1 / amount_2
+											when '*'	then amount_1 * amount_2
+											else amount_1 end
+	from raw_Data
+	) ,raw_data_1_2_3 as (
+	select	*,
+			amount_1_2_3 = case sign_3_amu	when '+'	then amount_1_2 + amount_3
+											when '-'	then amount_1_2 - amount_3
+											when '/'	then amount_1_2 / amount_3
+											when '*'	then amount_1_2 * amount_3
+											else amount_1_2		end
+	from raw_Data_1_2
+	),raw_data_final as (
+	select	*,
+			amount_total = case sign_4_amu	when '+'	then amount_1_2 + amount_3
+											when '-'	then amount_1_2 - amount_3
+											when '/'	then amount_1_2 / amount_3
+											when '*'	then amount_1_2 * amount_3
+											else amount_1_2_3	end
+	from	raw_Data_1_2_3
+	)
+	select	 JULIAN_MIS_DATE, tlbtcd, tltx_desc,tlbcur,tlcur1,tlcur2, nojurnal, currency, d_c,bucket_15,account,
+			case when d_c = 'D' then sum (amount_total)/100 end as amount_d,
+			case when d_c = 'c' then sum (amount_total)/100 end as amount_c, TLBTMI,TLBRN#,TLBFIL,tlbid
+	from raw_data_final
+	group by JULIAN_MIS_DATE,tlbtcd, tltx_desc,tlbid, tlbcur,tlcur1,tlcur2, nojurnal,currency, d_c, TLBTMI,TLBRN#,account,TLBFIL,bucket_15,tlbid</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>JULIAN_MIS_DATE</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>JULIAN_MIS_DATE</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>tlbtcd</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>tlbtcd</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tltx_desc</name>
+        <length>50</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>tltx_desc</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlbcur</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>tlbcur</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlcur1</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>tlcur1</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlcur2</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>tlcur2</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>nojurnal</name>
+        <length>2</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>nojurnal</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>currency</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>currency</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>d_c</name>
+        <length>2</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>d_c</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>bucket_15</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>bucket_15</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>account</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>account</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>amount_d</name>
+        <length>38</length>
+        <precision>6</precision>
+        <origin>all 2</origin>
+        <comments>amount_d</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>amount_c</name>
+        <length>38</length>
+        <precision>6</precision>
+        <origin>all 2</origin>
+        <comments>amount_c</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLBTMI</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>TLBTMI</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLBRN#</name>
+        <length>3</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>TLBRN#</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLBFIL</name>
+        <length>133</length>
+        <precision>-1</precision>
+        <origin>all 2</origin>
+        <comments>TLBFIL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>tlbid</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>all 2</origin>
+        <comments>tlbid</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>master</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>10.11.88.218 stg_host</connection>
+    <sql>select JULIAN_MIS_DATE,tlbtcd,TLBID,tlbtdt,tlbcur,tlcur1,tlcur2,tlbf01,tlbf02,tlbf03,tlbf04,tlbf05,tlbf06,tlbf07,tlbf08,tlbf09,tlbf10,tlbf11,tlbf12
+,tlbf13,tlbf14,tlbf15,tlbf16,tlbf17,tlbf18,tlbf19,tlbf20,TLBTMI,TLBFIL,TLBCUD
+from HISTORY_TLHIST a
+where  a.JULIAN_MIS_DATE between 2023335 and 2023364 --212 
+	and tltxok = 'Y' and tlbcor &lt;&gt; 'Y' and tlbdel = '' and a.TLBTCD in (
+	14,15,16,17,7044,7045,7911,7912,702,703,1733,1734,1760,2742,2743,2767,2768,7051,7054,7053,7052,7050,
+	219,221,1217,1218,2217,2218,2219,2224,5201,5271,4801,4802,4803,4804,729,1509,2509,730,
+	21,1730,1731,1732,2790,2791,2792,2793,2794,3791,20,727,1507,2507,2508,728,1407,
+	1758,2757,2758,7192,7196,7416,7420,7438,7442,7520,7521,7522,1757,1220,1221,1707,1708,1757,1758,1770,1771,1772,1773,1774,1775,1776,1777,1780,1781,1782,1783,2220,2221,2222,2223,2707,
+	2708,2713,2714,2717,2730,2731,2732,2733,2734,2735,2736,2737,2757,2758,2759,2770,2771,2772,2773,2774,2775,2776,2777,2780,2781,2782,2783,2784,2785,2786,2787,3704,3707,
+	3708,3709,3717,3718,3719,3737,3739,3745,3747,3749,3757,3759,3767,3769,4104,4302,7190,7191,7192,7193,7194,7195,7196,7197,7414,7415,7416,7417,7418,7419,7420,7421,7436,
+	7437,7438,7439,7440,7441,7442,7443,7516,7517,7518,7520,7521,7522,9406,9407,9408,9409,9412,9418,9419,9427,9438,9439,9440,9441,9442,9443,9444,9445,9446,9447,9448,9449,9450,9451,
+	4791,4793,4795,4796,4797,4798,4799,5206,5207,5208,5209,5278,5279,3701,7182,7424,7432,7513,1701,1751,2701,2721,2751,2761,4101,4102,7165,7393,7408,
+	7183,7425,7433,220 ,1409,1702,1709,1752,2409,2702,2709,2722,2729,2752,2762,3731,3734,3751,3754,4301,7166,7394,7409,9401,9402,9403,9405,
+	725,1505,2505,2506,726,8,19,1106,1116,1305,1315,1821,1822,1823,1824,1827,2106,2116,2305,2315,2710,2821,2822,2823,2824,4,5,701,714,720,722,1403,1504,1514,1706,1710,1712,1713,1721,1756,1759,
+	2403,2423,2504,2514,2524,2534,2706,2711,2712,2723,2725,2740,2741,2753,2756,2765,2766,3203,3303,3735,3755,3785,3790,4303,4304,7434,7913,7914,7915,7916,7917,7918,7919,7920,7921,7922,7923,7924,7925,7926,7927,
+	7928,7929,7930,9453,9454,7033,7041,2904,7037,7036)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>JULIAN_MIS_DATE</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>JULIAN_MIS_DATE</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>tlbtcd</name>
+        <length>4</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbtcd</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLBID</name>
+        <length>4</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>TLBID</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>tlbtdt</name>
+        <length>6</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbtdt</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlbcur</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbcur</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlcur1</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlcur1</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>tlcur2</name>
+        <length>4</length>
+        <precision>-1</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlcur2</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf01</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf01</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf02</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf02</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf03</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf03</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf04</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf04</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf05</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf05</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf06</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf06</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf07</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf07</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf08</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf08</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf09</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf09</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf10</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf10</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf11</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf11</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf12</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf12</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf13</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf13</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf14</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf14</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf15</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf15</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf16</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf16</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf17</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf17</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf18</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf18</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf19</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf19</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>tlbf20</name>
+        <length>19</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>tlbf20</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>TLBTMI</name>
+        <length>6</length>
+        <precision>0</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>TLBTMI</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLBFIL</name>
+        <length>133</length>
+        <precision>-1</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>TLBFIL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>TLBCUD</name>
+        <length>2</length>
+        <precision>-1</precision>
+        <origin>TB_AGE_MARITAL_DD 2 2 2 2 2</origin>
+        <comments>TLBCUD</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Bangkok</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>output TB_AGE_MARITAL_DD 2 2 2 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection/>
+    <schema/>
+    <table>temp_eri_callcenter</table>
+    <commit>10000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>JULIAN_MIS_DATE</column_name>
+        <stream_name>JULIAN_MIS_DATE</stream_name>
+      </field>
+      <field>
+        <column_name>tlbtcd</column_name>
+        <stream_name>tlbtcd</stream_name>
+      </field>
+      <field>
+        <column_name>TLBID</column_name>
+        <stream_name>TLBID</stream_name>
+      </field>
+      <field>
+        <column_name>tlbtdt</column_name>
+        <stream_name>tlbtdt</stream_name>
+      </field>
+      <field>
+        <column_name>tlbcur</column_name>
+        <stream_name>tlbcur</stream_name>
+      </field>
+      <field>
+        <column_name>tlcur1</column_name>
+        <stream_name>tlcur1</stream_name>
+      </field>
+      <field>
+        <column_name>tlcur2</column_name>
+        <stream_name>tlcur2</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf01</column_name>
+        <stream_name>tlbf01</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf02</column_name>
+        <stream_name>tlbf02</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf03</column_name>
+        <stream_name>tlbf03</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf04</column_name>
+        <stream_name>tlbf04</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf05</column_name>
+        <stream_name>tlbf05</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf06</column_name>
+        <stream_name>tlbf06</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf07</column_name>
+        <stream_name>tlbf07</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf08</column_name>
+        <stream_name>tlbf08</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf09</column_name>
+        <stream_name>tlbf09</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf10</column_name>
+        <stream_name>tlbf10</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf11</column_name>
+        <stream_name>tlbf11</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf12</column_name>
+        <stream_name>tlbf12</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf13</column_name>
+        <stream_name>tlbf13</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf14</column_name>
+        <stream_name>tlbf14</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf15</column_name>
+        <stream_name>tlbf15</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf16</column_name>
+        <stream_name>tlbf16</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf17</column_name>
+        <stream_name>tlbf17</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf18</column_name>
+        <stream_name>tlbf18</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf19</column_name>
+        <stream_name>tlbf19</stream_name>
+      </field>
+      <field>
+        <column_name>tlbf20</column_name>
+        <stream_name>tlbf20</stream_name>
+      </field>
+      <field>
+        <column_name>TLBTMI</column_name>
+        <stream_name>TLBTMI</stream_name>
+      </field>
+      <field>
+        <column_name>TLBFIL</column_name>
+        <stream_name>TLBFIL</stream_name>
+      </field>
+      <field>
+        <column_name>TLBCUD</column_name>
+        <stream_name>TLBCUD</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>output TB_AGE_MARITAL_DD 2 2 2 2 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection/>
+    <schema/>
+    <table>temp_eri_callcenter_3</table>
+    <commit>10000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>KodeCabang</column_name>
+        <stream_name>KodeCabang</stream_name>
+      </field>
+      <field>
+        <column_name>NamaCabang</column_name>
+        <stream_name>NamaCabang</stream_name>
+      </field>
+      <field>
+        <column_name>Area</column_name>
+        <stream_name>Area</stream_name>
+      </field>
+      <field>
+        <column_name>Regional</column_name>
+        <stream_name>Regional</stream_name>
+      </field>
+      <field>
+        <column_name>TanggalKunjunganNasabah</column_name>
+        <stream_name>TanggalKunjunganNasabah</stream_name>
+      </field>
+      <field>
+        <column_name>JamTransaksi</column_name>
+        <stream_name>JamTransaksi</stream_name>
+      </field>
+      <field>
+        <column_name>cif</column_name>
+        <stream_name>cif</stream_name>
+      </field>
+      <field>
+        <column_name>nama_nasabah</column_name>
+        <stream_name>nama_nasabah</stream_name>
+      </field>
+      <field>
+        <column_name>nomor_rekening</column_name>
+        <stream_name>nomor_rekening</stream_name>
+      </field>
+      <field>
+        <column_name>User ID / NIP</column_name>
+        <stream_name>User ID / NIP</stream_name>
+      </field>
+      <field>
+        <column_name>Nama User</column_name>
+        <stream_name>Nama User</stream_name>
+      </field>
+      <field>
+        <column_name>Transaksi Area (CS / Teller)</column_name>
+        <stream_name>Transaksi Area (CS / Teller)</stream_name>
+      </field>
+      <field>
+        <column_name>JenisTransaksi</column_name>
+        <stream_name>JenisTransaksi</stream_name>
+      </field>
+      <field>
+        <column_name>Nominal (IDR)</column_name>
+        <stream_name>Nominal (IDR)</stream_name>
+      </field>
+      <field>
+        <column_name>Nominal Ori</column_name>
+        <stream_name>Nominal Ori</stream_name>
+      </field>
+      <field>
+        <column_name>currency</column_name>
+        <stream_name>currency</stream_name>
+      </field>
+      <field>
+        <column_name>Channel Transaksi</column_name>
+        <stream_name>Channel Transaksi</stream_name>
+      </field>
+      <field>
+        <column_name>KriteriaNasabah</column_name>
+        <stream_name>KriteriaNasabah</stream_name>
+      </field>
+      <field>
+        <column_name>TLBFIL</column_name>
+        <stream_name>TLBFIL</stream_name>
+      </field>
+      <field>
+        <column_name>TLTX</column_name>
+        <stream_name>TLTX</stream_name>
+      </field>
+      <field>
+        <column_name>TLTX_DESC</column_name>
+        <stream_name>TLTX_DESC</stream_name>
+      </field>
+      <field>
+        <column_name>TipeTransaksi</column_name>
+        <stream_name>TipeTransaksi</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>output TB_AGE_MARITAL_DD 2 2 2 2 2 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection/>
+    <schema/>
+    <table>temp_eri_callcenter_2</table>
+    <commit>10000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>JULIAN_MIS_DATE</column_name>
+        <stream_name>JULIAN_MIS_DATE</stream_name>
+      </field>
+      <field>
+        <column_name>tlbtcd</column_name>
+        <stream_name>tlbtcd</stream_name>
+      </field>
+      <field>
+        <column_name>tltx_desc</column_name>
+        <stream_name>tltx_desc</stream_name>
+      </field>
+      <field>
+        <column_name>tlbcur</column_name>
+        <stream_name>tlbcur</stream_name>
+      </field>
+      <field>
+        <column_name>tlcur1</column_name>
+        <stream_name>tlcur1</stream_name>
+      </field>
+      <field>
+        <column_name>tlcur2</column_name>
+        <stream_name>tlcur2</stream_name>
+      </field>
+      <field>
+        <column_name>nojurnal</column_name>
+        <stream_name>nojurnal</stream_name>
+      </field>
+      <field>
+        <column_name>currency</column_name>
+        <stream_name>currency</stream_name>
+      </field>
+      <field>
+        <column_name>d_c</column_name>
+        <stream_name>d_c</stream_name>
+      </field>
+      <field>
+        <column_name>bucket_15</column_name>
+        <stream_name>bucket_15</stream_name>
+      </field>
+      <field>
+        <column_name>account</column_name>
+        <stream_name>account</stream_name>
+      </field>
+      <field>
+        <column_name>amount_d</column_name>
+        <stream_name>amount_d</stream_name>
+      </field>
+      <field>
+        <column_name>amount_c</column_name>
+        <stream_name>amount_c</stream_name>
+      </field>
+      <field>
+        <column_name>TLBTMI</column_name>
+        <stream_name>TLBTMI</stream_name>
+      </field>
+      <field>
+        <column_name>TLBRN#</column_name>
+        <stream_name>TLBRN#</stream_name>
+      </field>
+      <field>
+        <column_name>TLBFIL</column_name>
+        <stream_name>TLBFIL</stream_name>
+      </field>
+      <field>
+        <column_name>tlbid</column_name>
+        <stream_name>tlbid</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
